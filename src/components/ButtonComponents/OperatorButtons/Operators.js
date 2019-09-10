@@ -6,7 +6,7 @@ import { OperatorButton } from "./OperatorButton";
 
 //Import your array data to from the provided data file
 
-export const Operators = () => {
+export const Operators = ({ total, updater }) => {
   // STEP 2 - add the imported data to state
   const [operatorState, setOperatorState] = useState(operators);
   return (
