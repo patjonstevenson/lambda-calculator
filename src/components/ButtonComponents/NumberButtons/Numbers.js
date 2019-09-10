@@ -15,7 +15,7 @@ export const Numbers = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {numberState.map(number => {
-        return <NumberButton number="number" />;
+        return <NumberButton number={number} />;
       })}
     </div>
   );
