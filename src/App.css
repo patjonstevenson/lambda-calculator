@@ -1,22 +1,104 @@
 .container {
-    background-color: #c00025;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 15px;
-    border: 2px solid grey;
-    padding-bottom: 25px;
+  background-color: #c00025;
+  width: 100%;
+  max-width: 550px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  padding-bottom: 25px;
 }
 .display {
-    margin-top: 25px;
-    height: 100px;
-    width: 450px;
-    border-radius: 50px;
-    color: white;
-    background-color: #322c2d;
-    box-shadow: 1px 1px #322c2d;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-right: 8%;
-    font-size: 5.0rem;
-  }
+  margin-top: 25px;
+  height: 100px;
+  width: 80%; /*450px;*/
+  border-radius: 50px;
+  color: white;
+  background-color: #322c2d;
+  box-shadow: 1px 1px #322c2d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 8%;
+  font-size: 5rem;
+  padding-left: 4%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.logo-container {
+  margin: 5%;
+}
+
+.operator-button,
+.number-button,
+.special-button {
+  border-radius: 40px;
+  box-shadow: 5px 5px black;
+  margin: 4px;
+}
+
+.operator-button:active,
+.number-button:active,
+.special-button:active {
+  box-shadow: 1px 1px black;
+  transform: translate(3px, 3px);
+}
+
+.number-button {
+  background: #164476;
+  color: white;
+  font-size: 2rem;
+  width: 30%;
+  height: 20%;
+}
+
+.special-button {
+  background: #1c5d9a;
+  color: white;
+  font-size: 2rem;
+  width: 30%;
+  height: 90%;
+}
+
+.operator-button {
+  background: #1b7190;
+  color: white;
+  font-size: 2rem;
+  width: 50%;
+  height: 90%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 110%;
+  height: 50vh;
+  margin-top: 5%;
+}
+
+.numbers-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.operators-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.specials-container {
+  width: 100%;
+  padding-bottom: 2.5%;
+}
+
+.specials-numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 50%;
+}
