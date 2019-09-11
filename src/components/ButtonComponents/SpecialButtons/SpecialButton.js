@@ -15,7 +15,7 @@ export const SpecialButton = ({ special, total, updater }) => {
               updater((Number(total) * -1).toString());
               break;
             case "%":
-              updater(total / 100);
+              updater(total / 100); // had originally as * .01, but was leading to long decimal
             default:
               break;
           }
