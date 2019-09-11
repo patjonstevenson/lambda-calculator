@@ -15,7 +15,7 @@ export const Numbers = ({ total, updater }) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {numberState.map(number => {
-        return <NumberButton number={number} updater={updater} />;
+        return <NumberButton number={number} total={total} updater={updater} />;
       })}
     </div>
   );

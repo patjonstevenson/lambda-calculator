@@ -16,7 +16,9 @@ export const Specials = ({ total, updater }) => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {specialState.map(special => {
-        return <SpecialButton special={special} />;
+        return (
+          <SpecialButton special={special} updater={updater} total={total} />
+        );
       })}
     </div>
   );
