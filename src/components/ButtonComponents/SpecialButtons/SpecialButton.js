@@ -14,6 +14,8 @@ export const SpecialButton = ({ special, total, updater }) => {
             case "+/-":
               updater((Number(total) * -1).toString());
               break;
+            case "%":
+              updater(total * 0.01);
             default:
               break;
           }
