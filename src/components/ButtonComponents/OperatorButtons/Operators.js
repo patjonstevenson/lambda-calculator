@@ -18,7 +18,7 @@ export const Operators = ({ total, number, updater }) => {
         return (
           <OperatorButton
             operator={operator.value}
-            op={operator.func}
+            op={operator.char}
             number={number}
             updater={updater}
           />

@@ -9,7 +9,7 @@ export const SpecialButton = ({ special, total, updater }) => {
         onClick={() => {
           switch (special) {
             case "C":
-              updater(0);
+              updater("");
               break;
             case "+/-":
               updater((Number(total) * -1).toString());

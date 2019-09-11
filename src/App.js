@@ -20,7 +20,7 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   const [totalState, setTotal] = useState(0); // should be numberState
-  const [numberState, setNumState] = useState(0);
+  const [numberState, setNumState] = useState("");
   //const [operationState, setOperationState] = useState([setTotal, identity]);
 
   /*
